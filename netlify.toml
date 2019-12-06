@@ -2,7 +2,7 @@
   GRAPHQL_URL = "set the url to your GraphQL API here"
 
 [build]
-  command = "node fetchSchema.js --path schema.json --url $GRAPHQL_URL && yarn build"
+  command = "env && node fetchSchema.js --path schema.json --url $GRAPHQL_URL && yarn build"
   publish = "public"
 
 
